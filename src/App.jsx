@@ -1,9 +1,42 @@
-import React from "react";
+// import React from "react";
+// import { Routes, Route } from "react-router-dom";
+// import Sidebar from "./components/Sidebar";
+// import Navbar from "./components/Navbar";
+
+// // 1. Import the separate files you created in the pages folder
+// import Dashboard from "./pages/Dashboard";
+// import Employee from "./pages/Employee";
+// import Department from "./pages/Department";
+// import Payroll from "./pages/Payroll";
+// import Setting from "./pages/Setting";
+
+// export default function App() {
+//   const [sidebarOpen, setSidebarOpen] = React.useState(false);
+//   return (
+//     <div className="min-h-screen bg-gray-50 flex text-gray-900 relative overflow-x-hidden">
+//       <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+
+//       {/* Main Right Workspace Window */}
+//       <main className="flex-1 ml-64 p-8">
+//         <Routes>
+//           <Route path="/" element={<Dashboard />} />
+//           <Route path="/employees" element={<Employee />} />
+//           <Route path="/departments" element={<Department />} />
+//           <Route path="/payroll" element={<Payroll />} />
+//           <Route path="/settings" element={<Setting />} />
+//         </Routes>
+//       </main>
+//     </div>
+//     </div>
+//   );
+// }
+
+import React, { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
 import Navbar from "./components/Navbar";
+import Header from "./components/Header";
 
-// 1. Import the separate files you created in the pages folder
 import Dashboard from "./pages/Dashboard";
 import LandingPage from "./pages/LandingPage";
 import Employee from "./pages/Employee";
