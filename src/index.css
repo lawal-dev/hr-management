@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700&display=swap');
 @import "tailwindcss";
+/* @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght=400;500;600;700&display=swap');
 
 @theme {
   --color-primary: #4648d4;
@@ -22,4 +22,4 @@ body {
   background-color: var(--color-background);
   color: var(--color-text-main);
   font-family: var(--font-sans);
-}
+} */
