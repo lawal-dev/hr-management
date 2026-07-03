@@ -22,18 +22,15 @@ export default function App() {
      
 
       {/* Main Right Workspace Window */}
-      {/* <main className="flex-1 ml-64 p-8"> */}
-        { pathname !== "/" &&
-
-          <header className="mb-8">
+      <main className="flex-1 ml-64 p-8">
+        {/* <header className="mb-8">
           <h1 className="text-2xl font-bold tracking-tight">
             HR Pulse Workspace
           </h1>
           <p className="text-xs text-secondary-text mt-0.5">
             Welcome to your team administration panel.
           </p>
-        </header>
-        }
+        </header> */}
 
         {/* 2. Connect the URL paths to their actual separate files */}
         {/* 2. Connect the URL paths to their actual separate files */}
