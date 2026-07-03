@@ -4,7 +4,7 @@ const Dashboard = () => {
   return (
     <div className="w-full">
       {/* Dashboard Top Header Bar matching image_7c405c.png */}
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-6 border-b border-gray-100">
+      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-3 pb-6 border-b border-gray-100">
         {/* Left Side: Titles */}
         <div>
           <h1 className=" text-4xl font-[900] text-gray-900 tracking-tight">
@@ -15,7 +15,7 @@ const Dashboard = () => {
           </p>
         </div>
 
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-4">
           <div className="relative">
             <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-gray-400">
               <i className="bi bi-search text-sm"></i>
@@ -23,11 +23,11 @@ const Dashboard = () => {
             <input
               type="text"
               placeholder="Search employees..."
-              className="w-64 pl-9 pr-4 py-2 text-sm bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-indigo-500 transition-all placeholder:text-gray-400"
+              className="w-50 pl-9 pr-4 py-2 text-sm bg-white border border-gray-200 rounded-xl focus:outline-none focus:border-indigo-500 transition-all placeholder:text-gray-400"
             />
           </div>
 
-          <button className="flex items-center gap-2 px-4 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-sm transition-all whitespace-nowrap">
+          <button className="flex items-center gap-2 px-2 py-2 text-sm font-medium text-white bg-indigo-600 hover:bg-indigo-700 rounded-xl shadow-sm transition-all whitespace-nowrap">
             <i className="bi bi-plus-lg"></i>
             Add Employee
           </button>
