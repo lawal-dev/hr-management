@@ -38,35 +38,44 @@ import Navbar from "./components/Navbar";
 import Header from "./components/Header";
 
 import Dashboard from "./pages/Dashboard";
+import LandingPage from "./pages/LandingPage";
 import Employee from "./pages/Employee";
 import Department from "./pages/Department";
 import Payroll from "./pages/Payroll";
 import Setting from "./pages/Setting";
+import Navbar from "./components/Navbar";
 
 export default function App() {
-  const [sidebarOpen, setSidebarOpen] = useState(false);
-
+  const pathname = window.location.pathname;
+  console.log("Current Pathname:", pathname);
   return (
-    <div className="min-h-screen bg-gray-50 flex text-gray-900 relative overflow-x-hidden">
-      {/* 1. Pass the toggle state controls to the Sidebar */}
-      <Sidebar isOpen={sidebarOpen} setIsOpen={setSidebarOpen} />
+    <div className="min-h-screen bg-background flex text-text-main">
+      {/* Permanent Navigation Sidebar */}
+    { pathname !== "/" && <Sidebar /> }
+     
 
-      {/* Main Workspace Frame */}
-      <div className="flex-1 lg:ml-64 flex flex-col min-w-0 w-full">
-        {/* 2. Pass the trigger action down to the Header */}
-        <Header onMenuClick={() => setSidebarOpen(!sidebarOpen)} />
+      {/* Main Right Workspace Window */}
+      <main className="flex-1 ml-64 p-8">
+        {/* <header className="mb-8">
+          <h1 className="text-2xl font-bold tracking-tight">
+            HR Pulse Workspace
+          </h1>
+          <p className="text-xs text-secondary-text mt-0.5">
+            Welcome to your team administration panel.
+          </p>
+        </header> */}
 
-        {/* Page Content Viewport */}
-        <main className="flex-1 p-4 md:p-8 pt-20 md:pt-24 lg:pt-8">
-          <Routes>
-            <Route path="/" element={<Dashboard />} />
-            <Route path="/employees" element={<Employee />} />
-            <Route path="/departments" element={<Department />} />
-            <Route path="/payroll" element={<Payroll />} />
-            <Route path="/settings" element={<Setting />} />
-          </Routes>
-        </main>
-      </div>
+        {/* 2. Connect the URL paths to their actual separate files */}
+        {/* 2. Connect the URL paths to their actual separate files */}
+        <Routes>
+          <Route path="/" element={<LandingPage/>} />
+          <Route path="/" element={<Dashboard />} />
+          <Route path="/employees" element={<Employee />} />
+          <Route path="/departments" element={<Department />} />
+          <Route path="/payroll" element={<Payroll />} />
+          <Route path="/settings" element={<Setting />} />
+        </Routes>
+      {/* </main> */}
     </div>
   );
 }
