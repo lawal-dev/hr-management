@@ -1,6 +1,7 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
 import Sidebar from "./components/Sidebar";
+import Navbar from "./components/Navbar";
 
 // 1. Import the separate files you created in the pages folder
 import Dashboard from "./pages/Dashboard";
@@ -12,7 +13,6 @@ import Setting from "./pages/Setting";
 export default function App() {
   return (
     <div className="min-h-screen bg-background flex text-text-main">
-      {/* Permanent Navigation Sidebar */}
       <Sidebar />
 
       {/* Main Right Workspace Window */}
