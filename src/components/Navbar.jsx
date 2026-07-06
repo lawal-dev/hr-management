@@ -1,0 +1,325 @@
+import React from "react";
+import { RxPeople } from "react-icons/rx";
+import { TbCash } from "react-icons/tb";
+import { BsBuilding } from "react-icons/bs";
+
+const Navbar = () => {
+    return (
+        <>
+            <nav className="sticky top-0 z-50 bg-white border-b border-gray-100 px-5 md:px-10 h-16 flex items-center justify-between">
+
+                <div>
+                    <h1 className="text-2xl font-bold text-indigo-600">
+                        HR Pulse
+                    </h1>
+                </div>
+
+                <ul className="hidden md:flex items-center gap-8 font-medium">
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#benefit">Benefits</a></li>
+                    <li><a href="#pricing">Pricing</a></li>
+                </ul>
+
+                <div className="hidden md:flex gap-4">
+                    <button className="bg-indigo-100 text-indigo-600 px-5 py-2 rounded-lg hover:bg-indigo-200">
+                        Login
+                    </button>
+
+                    <button className="bg-indigo-600 text-white px-5 py-2 rounded-lg hover:bg-indigo-700">
+                        Add Employees
+                    </button>
+                </div>
+
+            </nav>
+
+            <section className="flex flex-col-reverse md:flex-row items-center justify-between gap-10 px-5 md:px-10 py-16 bg-gray-50">
+
+                <div className="flex flex-col gap-5 w-full md:w-1/2 text-center md:text-left">
+
+                    <h1 className="text-3xl md:text-5xl font-bold">
+                        Empower Your Workforce
+                        <br />
+                        with HR Pulse
+                    </h1>
+
+                    <p className="text-gray-600 leading-7">
+                        Streamline your HR operations, manage employees effortlessly,
+                        and gain actionable insights with our modern Employee
+                        Management System.
+                    </p>
+
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+
+                        <button className="bg-indigo-600 text-white py-3 px-6 rounded-lg hover:bg-indigo-700">
+                            Get Started for Free
+                        </button>
+
+                        <button className="bg-white border border-gray-300 py-3 px-6 rounded-lg hover:scale-105 transition">
+                            Book a Demo
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <div className="w-full md:w-1/2 flex justify-center">
+                    <img src="laptop .png" alt="Laptop" className="w-full max-w-md md:max-w-lg" />
+                </div>
+
+            </section>
+
+            <section className="bg-gray-100 py-10">
+
+                <div className="max-w-6xl mx-auto px-5 grid grid-cols-1 sm:grid-cols-3 gap-8 text-center">
+
+                    <div>
+                        <h3 className="text-3xl font-bold text-indigo-600">
+                            10,000+
+                        </h3>
+                        <p>Employees Managed</p>
+                    </div>
+
+                    <div>
+                        <h3 className="text-3xl font-bold text-indigo-600">
+                            500+
+                        </h3>
+                        <p>Companies Trusted</p>
+                    </div>
+
+                    <div>
+                        <h3 className="text-3xl font-bold text-indigo-600">
+                            99.9%
+                        </h3>
+                        <p>Uptime Guaranteed</p>
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <section className="bg-gray-50 py-16 px-5 md:px-10">
+                <div className="max-w-7xl mx-auto">
+
+
+                    <div className="text-center mb-12">
+                        <h2 className="text-3xl md:text-4xl font-bold">
+                            Everything you need to manage your team
+                        </h2>
+
+                        <p className="mt-4 text-gray-600">
+                            A comprehensive suite of tools designed to simplify complex HR processes.
+                        </p>
+                    </div>
+
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+
+                        <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <RxPeople className="text-4xl text-indigo-600 bg-indigo-100 w-14 h-14 p-3 rounded-lg" />
+
+                            <h3 className="text-2xl font-semibold mt-5">
+                                Centralized Directory
+                            </h3>
+
+                            <p className="text-gray-600 mt-3 leading-7">
+                                Keep all employee records, documents and contact information in one secure, easily accessible location.
+                            </p>
+                        </div>
+
+
+                        <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <TbCash className="text-4xl text-indigo-600 bg-indigo-100 w-14 h-14 p-3 rounded-lg" />
+
+                            <h3 className="text-2xl font-semibold mt-5">
+                                Automated Payroll
+                            </h3>
+
+                            <p className="text-gray-600 mt-3 leading-7">
+                                Streamline compensation management with automated calculations, tax deductions and seamless direct deposits.
+                            </p>
+                        </div>
+
+                        <div className="bg-white rounded-xl p-6 shadow-md hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+                            <BsBuilding className="text-4xl text-indigo-600 bg-indigo-100 w-14 h-14 p-3 rounded-lg" />
+
+                            <h3 className="text-2xl font-semibold mt-5">
+                                Department Insights
+                            </h3>
+
+                            <p className="text-gray-600 mt-3 leading-7">
+                                Visualize organizational structure and track department-level metrics to optimize workforce planning.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </section>
+
+            <section
+                id="benefit"
+                className="flex flex-col lg:flex-row items-center gap-12 px-5 md:px-10 lg:px-20 py-16">
+
+                <div className="w-full lg:w-1/2">
+                    <img src="pics 2.jpg" alt="Employee Directory" className="w-full h-72 md:h-96 object-cover rounded-xl shadow-lg" />
+                </div>
+
+
+                <div className="w-full lg:w-1/2">
+
+                    <span className="inline-block bg-indigo-100 text-indigo-600 font-semibold px-4 py-2 rounded-full">
+                        Employee Directory
+                    </span>
+
+                    <h2 className="text-3xl md:text-4xl font-bold mt-4">
+                        Find anyone, instantly.
+                    </h2>
+
+                    <p className="text-gray-600 mt-5 leading-7">
+                        Navigate your organization with ease. Our robust employee directory
+                        allows you to filter by department, location or role. Access detailed
+                        profiles to understand skills, reporting lines and contact information
+                        at a glance.
+                    </p>
+
+                    <div className="mt-8 space-y-4">
+
+                        <div className="flex items-center gap-3">
+                            <span className="text-green-500 text-xl">✔</span>
+                            <p>Advanced search and filtering capabilities</p>
+                        </div>
+
+                        <div className="flex items-center gap-3">
+                            <span className="text-green-500 text-xl">✔</span>
+                            <p>Visual organizational charts and reporting structures</p>
+                        </div>
+
+                        <div className="flex items-center gap-3">
+                            <span className="text-green-500 text-xl">✔</span>
+                            <p>Customizable profile fields</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+            <section id="pricing" className="bg-gray-100 py-16 px-5 md:px-10 lg:px-20">
+                <div className="max-w-4xl mx-auto text-center">
+
+                    <h2 className="text-3xl md:text-5xl font-bold">
+                        Ready to transform your HR?
+                    </h2>
+
+                    <p className="mt-5 text-gray-600 leading-7">
+                        Join hundreds of forward-thinking companies already using
+                        <span className="font-semibold"> HR Pulse</span>
+                        to manage their most valuable asset—their people.
+                    </p>
+
+                    <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
+
+                        <button className="bg-indigo-600 text-white px-8 py-3 rounded-xl hover:bg-indigo-700">
+                            Start Your 14-Day Free Trial
+                        </button>
+
+                        <button className="border border-indigo-600 text-indigo-600 px-8 py-3 rounded-xl hover:bg-indigo-600 hover:text-white">
+                            Book a Demo
+                        </button>
+
+                    </div>
+
+                    <p className="mt-5 text-sm text-gray-500">
+                        No credit card required. Cancel anytime.
+                    </p>
+
+                </div>
+            </section>
+
+
+            <footer className="bg-white border-t border-gray-200">
+
+                <div className="max-w-7xl mx-auto px-5 md:px-10 lg:px-20 py-16 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+
+                    <div>
+                        <h2 className="text-2xl font-bold text-indigo-600">
+                            HR PULSE
+                        </h2>
+
+                        <p className="mt-4 text-gray-600 leading-7">
+                            Modern employee management for the modern workforce. Empower your team with smarter HR solutions.
+                        </p>
+                    </div>
+
+
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">
+                            Product
+                        </h3>
+
+                        <ul className="space-y-3 text-gray-600">
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors"> Features </li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors"> Pricing </li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors">Integrations </li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors"> Changelog </li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">
+                            Company
+                        </h3>
+
+                        <ul className="space-y-3 text-gray-600">
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors">About Us</li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors"> Careers</li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors">Blog </li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors"> Contact</li>
+                        </ul>
+                    </div>
+
+
+                    <div>
+                        <h3 className="text-lg font-semibold mb-4">
+                            Legal
+                        </h3>
+
+                        <ul className="space-y-3 text-gray-600">
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors">Privacy Policy </li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors"> Terms of Service</li>
+
+                            <li className="hover:text-indigo-600 cursor-pointer transition-colors">Cookie Policy</li>
+                        </ul>
+                    </div>
+
+
+
+                    <div className=" border-gray-200 py-6 px-5 md:px-10 ">
+                        <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4  ">
+
+                            <p className="text-gray-500 text-sm flex  md:text-left">© {new Date().getFullYear()} HR PULSE. All rights reserved. </p>
+
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </footer>
+        </>
+    );
+};
+
+export default Navbar;
